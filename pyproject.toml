@@ -1,9 +1,4 @@
 [project]
 name = "blog-generator"
 version = "0.1.0"
-dependencies = [
-    "crewai>=1.0.0",
-    "langchain>=0.2.0",
-    "langchain-community",
-    "litellm"
-]
+dependencies = []
