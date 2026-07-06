@@ -1,0 +1,17 @@
+[project]
+name = "blog-generator"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "crewai>=1.0.3",
+    "crewai-tools",
+    "langchain>=0.2.0",
+    "langchain-community",
+    "litellm",
+    "pyyaml"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
