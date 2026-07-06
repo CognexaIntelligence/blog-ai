@@ -11,31 +11,31 @@ def run(inputs: dict):
 
     researcher = Agent(
         role="Researcher",
-        goal=f"Research deeply about {topic}",
-        backstory="Expert analyst",
+        goal=f"Research {topic}",
+        backstory="Expert researcher",
         llm=llm
     )
 
     writer = Agent(
         role="Writer",
         goal=f"Write a blog on {topic}",
-        backstory="Professional content writer",
+        backstory="Professional writer",
         llm=llm
     )
 
-    research_task = Task(
-        description=f"Research detailed insights about {topic}",
+    task1 = Task(
+        description=f"Research {topic}",
         agent=researcher
     )
 
-    write_task = Task(
-        description=f"Write a complete blog article about {topic}",
+    task2 = Task(
+        description=f"Write detailed blog on {topic}",
         agent=writer
     )
 
     crew = Crew(
         agents=[researcher, writer],
-        tasks=[research_task, write_task],
+        tasks=[task1, task2],
         process=Process.sequential
     )
 
