@@ -1,6 +1,5 @@
 from crewai import Agent, Task, Crew
 from langchain_community.chat_models import ChatLiteLLM
-import os
 
 def run(topic: str):
     llm = ChatLiteLLM(
