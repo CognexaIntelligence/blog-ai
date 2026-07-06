@@ -1,0 +1,11 @@
+[project]
+name = "blog-generator"
+version = "0.1.0"
+dependencies = [
+    "crewai",
+    "langchain",
+    "langchain-community",
+    "litellm"
+]
+
+[tool.uv]
